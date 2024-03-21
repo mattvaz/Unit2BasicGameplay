@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     {
        // keep the player in bounds
        
-        if(transform.position.x < xRange)
+        if(transform.position.x < -xRange)
         {
             transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
         }
