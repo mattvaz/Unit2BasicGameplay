@@ -50,11 +50,11 @@ public class Aggresiveanimales : MonoBehaviour
         Vector3 spawnPosLeft = new Vector3(spawnPositionX, 0, Random.Range(lowSpawnRangeZ, highSpawnRangeZ));
         Vector3 spawnPosRight = new Vector3(-spawnPositionX, 0, Random.Range(lowSpawnRangeZ, highSpawnRangeZ));
 
-         (timerHorizontal >= waitTime && leftRightSwitcher)
+        timerHorizontal >= waitTime && leftRightSwitcher
         {
             //Start spawning animals based on the animal prefabs, at the spawn position, and at their current transform rotation.
-            Instantiate(animalPrefabs[animalIndex], spawnPosLeft, animalPrefabs[animalIndex].transform.rotation = Quaternion.Euler(0, 90, 0));
-            leftRightSwitcher = !leftRightSwitcher;
+            object value= Instantiate(animalPrefabs[animalIndex],spawnPosLeft,animalPrefabs[animalIndex].transform.rotation = Quaternion.Euler(0, 90, 0));
+            leftRightSwitcher = leftRightSwitcher;
 
             timerHorizontal = 0.0f;
         }
